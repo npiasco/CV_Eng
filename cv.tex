@@ -1,0 +1,212 @@
+%!TEX TS-program = xelatex
+\documentclass[]{friggeri-cv}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage{afterpage}
+\usepackage{hyperref}
+\usepackage{color}
+\usepackage{xcolor}
+\hypersetup{
+    pdftitle={},
+    pdfauthor={},
+    pdfsubject={},
+    pdfkeywords={},
+    colorlinks = true,
+	linkcolor = blue,
+	urlcolor  = blue,
+    citecolor = blue,
+    anchorcolor = blue       % no lik border color
+   allbordercolors=white    % white border color for all
+}
+\addbibresource{bibliography.bib}
+\RequirePackage{xcolor}
+\definecolor{pblue}{HTML}{0395de}
+
+\begin{document}
+
+\header{Nathan}{Piasco}
+      {Engineer - PhD student in computer vision}
+      
+% Fake text to add separator      
+\vspace{10pt}
+\fcolorbox{white}{gray}{\parbox{\dimexpr\textwidth-2\fboxsep-2\fboxrule}{%
+.....
+}}
+\vspace{1pt}
+
+% In the aside, each new line forces a line break
+\begin{aside}
+  ~
+  \section{Contact}
+    10 rue des Arquebusiers
+    75003, Paris
+    FRANCE
+    ~
+    +33 632508367
+    ~
+   	\href{mailto:nathan.piasco@gmail.com}{\textbf{nathan.piasco@}}
+   	gmail.com
+	{\href{https://www.linkedin.com/in/nathan-piasco-a4766aa5/}{\textcolor{pblue}{linkedin}}}
+	{\href{https://scholar.google.fr/citations?user=S3zYmOYAAAAJ&hl=fr}{\textcolor{pblue}{scholar}}}
+	~
+    DOB: 12/08/1992
+  \section{Expert skills} 
+    \textbf{\small{\textsc{Computer vision}}}
+    pattern recognition, multiple view geometry, image retrieval
+    \textbf{\small{\textsc{Deep learning}}}
+    supervised/self-supervised learning, regression
+    \textbf{\small{\textsc{Neural networks}}}
+    convolutional/reccurent neural network, encoder/decoder architecture, GAN
+  \section{Computer skills}
+    \textbf{\textsc{\textsc{Programming}}}
+    Python, \texttt{C/C++},
+    Matlab,  \LaTeX
+    ~
+    \textbf{\textsc{Libraries}}
+    Pytorch
+    Scikit Learn
+    PCL (Point Cloud Library)
+    ROS (Robotic Operating System)
+    OpenCV, OpenGL
+    ~
+    \textbf{\textsc{OS}}
+    Linux, Windows, MacOS
+    ~
+    \textbf{{Github}} : {\href{https://github.com/npiasco}{\textcolor{pblue}{npiasco}}}
+\end{aside}
+
+\section{Education}
+\begin{entrylist}
+  \entry
+    {2016 - 2019}
+    {PhD - Image processing}
+    {UBFC, Dijon}
+    {Thesis : Vision-based localization with discriminative features from heterogeneous visual data}
+  \entry
+    {2014 - 2015}
+    {Master Degree}
+    {Universit\'e Pierre et Marie Curie, Paris}
+    {Images and Sound processing for Intelligent Systems}
+  \entry
+    {2010 - 2015}
+    {Engineering school}
+    {Polytech Paris-UPMC, Paris}
+    {Major in Robotic and Computer Programming}
+\end{entrylist}
+
+\section{Work experience}
+\begin{entrylist}
+  \entry
+    {\small{10/16 - \textit{09/19}}}
+    {PhD student}
+    {ImVIA - LASTIG-IGN lab, 94160 Saint-Mandé}
+    {\textsc{Vision-based localization with discriminative features from heterogeneous visual data:}
+    \begin{itemize}[label=$\rhd$]
+    	\item Writing of a large review of state-of-the-art methods for visual based localisation with heterogeneous data
+        \item Designing of a new deep learned image descriptor for urban image retrieval in challenging condition by exploiting side geometric information
+        \item Implementation of a innovative image pose refinement method based on both learned image representation and geometric algorithms
+    \end{itemize}
+    %\vspace{5pt}
+    }
+  \entry
+    {\small{10/16 - \textit{09/19}}}
+    {Assistant professor}
+    {ENSG engineering school, 77420 Champs-sur-Marne}
+    {\textsc{Assistant professor for the following courses:}
+    \begin{itemize}[label=$\rhd$]
+        \item Practical introduction to augmented reality (master students)
+        \item Computer graphics with OpenGL (master students)
+   		\item Introduction to object-oriented programming with python (master students)
+        \item Programming in python (bachelor \& master students)
+    \end{itemize}
+    %\vspace{5pt}
+    }
+  \entry
+    {\small{10/15 - 09/16}}
+    {Research engineer}
+    {A.I.Mergence : robotic startup, 75013 Paris}
+    {\textsc{Computer vision referrer in a project of home-safety robot:}
+    \begin{itemize}[label=$\rhd$]
+    	\item Technological watch on various computer vision related field, including: mapping, people recognition, tracking, multiple view imaging, depth camera
+    	\item Development of a stereo camera system for semantic object detection in a house
+        \item Optimization and integration of vision algorithms on an embedded ARM device
+    \end{itemize}\vspace{5pt}}
+  \entry
+    {03/15 - 09/15}
+    {Master internship}
+    {ONERA, the French Aerospace Lab, 91120 Palaiseau}
+    {\textsc{Collaborative localization and formation ﬂying using distributed stereo-vision:}
+    \begin{itemize}[label=$\rhd$]
+    	\item Relative pose estimation of in-flight UAV with a dynamic wide-baseline multiple view system
+    	\item Multi-modal and multi-sensor data fusion
+        \item Introducing of a new control law for positioning of an UAV swarm 
+        \item Practical testing of the developed method in real condition
+    \end{itemize} \vspace{5pt}}
+\end{entrylist}
+
+\newpage
+\section{Publications}
+    \textbf{Peer-reviewed Journal}
+    
+    {\footnotesize{N. Piasco, D. Sidibé, C. Demonceaux, V. Gouet-Brunet, \href{http://recherche.ign.fr/labos/matis/pdf/articles_revues/2017/PSDG17.pdf}{\textcolor{pblue}{A Survey on Visual-Based Localization: On the Benefit of Heterogeneous Data}},
+\textit{Pattern Recognition, Volume 74, February,} 2018.}}
+	
+	\vspace{0.5cm}
+    \textbf{Peer-reviewed International Conferences} 
+    
+    {\footnotesize{N. Piasco, D. Sidibé, V. Gouet-Brunet, C. Demonceaux, \href{http://recherche.ign.fr/labos/matis/pdf/articles_conf/2019/root.pdf}{\textcolor{pblue}{Learning Scene Geometry for Visual Localization in Challenging Conditions}},
+\textit{IEEE International Conference of Robotics and Automation, Montreal, Canada,} 2019. \textbf{(Finalist nominated for the Best Paper Award in Robot Vision.)}}
+
+	\footnotesize{N. Piasco, J. Marzat, M. Sanfourche, \href{http://julien.marzat.free.fr/Publications/2016\%20ICRA/2016_ICRA_Collaborative_localization_formation_flying_distributed_stereo-vision.pdf}{\textcolor{pblue}{Collaborative localization and formation ﬂying using distributed stereo-vision}},
+\textit{IEEE International Conference on Robotics and Automation, Stockholm, Sweden,} 2016.}	
+	}    
+
+	\vspace{0.5cm}
+    \textbf{Peer-reviewed National Conferences} 
+    
+    {\footnotesize{N. Piasco, D. Sidibé, V. Gouet-Brunet, C. Demonceaux, \href{https://rfiap2018.ign.fr/sites/default/files/ARTICLES/RFIAP_2018/RFIAP_2018_Piasco_Apprentissage.pdf}{\textcolor{pblue}{Apprentissage de modalités auxiliaires pour la localisation basée vision}},
+\textit{Reconnaissance des Formes, Image, Apprentissage et Perception (RFIAP), Champs-sur-Marne, France,} 2018.}
+
+\footnotesize{N. Piasco, D. Sidibé, V. Gouet-Brunet, C. Demonceaux, \href{http://recherche.ign.fr/labos/matis/img/ic_pdf.gif}{\textcolor{pblue}{Localisation Basée Vision : de l’hétérogénéité des approches et des données}},
+\textit{ORASIS - Journées francophones des jeunes chercheurs en vision par ordinateur, Colleville-sur-Mer, France,} 2017.}}
+    
+
+%\begin{flushleft}
+%\emph{January 14th, 2014}
+%\end{flushleft}
+%\begin{flushright}
+%\emph{Carmine Benedetto}
+%\end{flushright}
+
+%%% This piece of code has been commented by Karol Kozioł due to biblatex errors. 
+% 
+%\printbibsection{article}{article in peer-reviewed journal}
+%\begin{refsection}
+%  \nocite{*}
+%  \printbibliography[sorting=chronological, type=inproceedings, title={international peer-reviewed conferences/proceedings}, notkeyword={france}, heading=subbibliography]
+%\end{refsection}
+%\begin{refsection}
+%  \nocite{*}
+%  \printbibliography[sorting=chronological, type=inproceedings, title={local peer-reviewed conferences/proceedings}, keyword={france}, heading=subbibliography]
+%\end{refsection}
+%\printbibsection{misc}{other publications}
+%\printbibsection{report}{research reports}
+
+\begin{asidep2}
+  \section{Languages}
+    \textbf{\textsc{French}}
+    Mother tongue
+    \textbf{\textsc{English}}
+    Fluent
+    %~
+    \textbf{\textsc{Spanish}}
+    Beginner  
+  \section{Driving}
+    Driver's license holder
+  \section{Interests}
+  Robotic
+  Autonomous driving    
+  Augmented reality  
+\end{asidep2}
+
+\end{document}
