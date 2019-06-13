@@ -21,8 +21,8 @@
 
 \definecolor{white}{RGB}{255,255,255}
 
-\definecolor{darkgray}{HTML}{333333}
-\definecolor{gray}{HTML}{4D4D4D}
+\definecolor{darkgray}{HTML}{334d5c}
+\definecolor{gray}{HTML}{23292e}
 \definecolor{lightgray}{HTML}{999999}
 
 \definecolor{green}{HTML}{C2E15F}
@@ -30,7 +30,8 @@
 \definecolor{purple}{HTML}{D3A4F9}
 \definecolor{red}{HTML}{FB4485}
 \definecolor{blue}{HTML}{6CE0F1}
-\definecolor{pblue}{HTML}{0395DE}
+\definecolor{pblue}{HTML}{1e5d88} 
+\definecolor{highlight}{HTML}{55ad7a} 
 
 \ifdefined\@cv@print
   \colorlet{green}{gray}
@@ -44,9 +45,8 @@
   \colorlet{fillheader}{white}
   \colorlet{header}{gray}
 \fi
-%\colorlet{textcolor}{gray}
-\colorlet{headercolor}{gray}
 
+\colorlet{headercolor}{gray}
 %%%%%%%%%
 % Fonts %
 %%%%%%%%%
@@ -79,7 +79,7 @@ BoldItalicFont=texgyreheros-bolditalic.otf]
 
 \defaultfontfeatures{Mapping=tex-text}
 \setmainfont
-[Mapping=tex-text, Color=textcolor,
+[Mapping=tex-text, 
 BoldFont=texgyreheros-bold.otf,
 ItalicFont=texgyreheros-italic.otf,
 BoldItalicFont=texgyreheros-bolditalic.otf
@@ -345,4 +345,4 @@ BoldItalicFont=texgyreheros-bolditalic.otf
 %%%%%%%%%%%%%%%%
 
 \RequirePackage[left=6.1cm,top=2cm,right=1.5cm,bottom=1.5cm,nohead,nofoot]{geometry}
-\RequirePackage{hyperref}
+\RequirePackage[colorlinks=true]{hyperref}

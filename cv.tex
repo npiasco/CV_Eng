@@ -1,9 +1,9 @@
 %!TEX TS-program = xelatex
-\documentclass[]{friggeri-cv}
+\documentclass[]{friggeri-cv-cust}
 \usepackage{enumitem}
 \usepackage{amssymb}
 \usepackage{afterpage}
-\usepackage{hyperref}
+\usepackage[colorlinks=true]{hyperref}
 \usepackage{color}
 \usepackage{xcolor}
 \hypersetup{
@@ -19,9 +19,8 @@
    allbordercolors=white    % white border color for all
 }
 \addbibresource{bibliography.bib}
-\RequirePackage{xcolor}
-\definecolor{pblue}{HTML}{0395de}
-
+%\RequirePackage{xcolor}
+\color{darkgray}
 \begin{document}
 
 \header{Nathan}{Piasco}
@@ -46,17 +45,25 @@
     ~
    	\href{mailto:nathan.piasco@gmail.com}{\textbf{nathan.piasco@}}
    	gmail.com
-	{\href{https://www.linkedin.com/in/nathan-piasco-a4766aa5/}{\textcolor{pblue}{linkedin}}}
-	{\href{https://scholar.google.fr/citations?user=S3zYmOYAAAAJ&hl=fr}{\textcolor{pblue}{scholar}}}
+	{\href{https://www.linkedin.com/in/nathan-piasco-a4766aa5/}{\textcolor{highlight}{linkedin}}}
+	{\href{https://scholar.google.fr/citations?user=S3zYmOYAAAAJ&hl=fr}{\textcolor{highlight}{scholar}}}
 	~
     DOB: 12/08/1992
-  \section{Expert skills} 
+  \section{Expert skills}
     \textbf{\small{\textsc{Computer vision}}}
-    pattern recognition, multiple view geometry, image retrieval
-    \textbf{\small{\textsc{Deep learning}}}
-    supervised/self-supervised learning, regression
+    image retrieval
+    multiple view geometry
+    pattern recognition
+    \textbf{\small{\textsc{Machine learning}}}
+    supervised learning
+    unsupervised learning
+    selfsupervised learning
+    regression
     \textbf{\small{\textsc{Neural networks}}}
-    convolutional/reccurent neural network, encoder/decoder architecture, GAN
+    convolutional layer
+    recurrent layer
+    encoder/decoder
+    GAN
   \section{Computer skills}
     \textbf{\textsc{\textsc{Programming}}}
     Python, \texttt{C/C++},
@@ -65,14 +72,14 @@
     \textbf{\textsc{Libraries}}
     Pytorch
     Scikit Learn
+	OpenCV, OpenGL
     PCL (Point Cloud Library)
     ROS (Robotic Operating System)
-    OpenCV, OpenGL
     ~
     \textbf{\textsc{OS}}
     Linux, Windows, MacOS
     ~
-    \textbf{{Github}} : {\href{https://github.com/npiasco}{\textcolor{pblue}{npiasco}}}
+    \textbf{{Github}} : {\href{https://github.com/npiasco}{\textcolor{highlight}{npiasco}}}
 \end{aside}
 
 \section{Education}
@@ -104,7 +111,7 @@
     \begin{itemize}[label=$\rhd$]
     	\item Writing of a large review of state-of-the-art methods for visual based localisation with heterogeneous data
         \item Designing of a new deep learned image descriptor for urban image retrieval in challenging condition by exploiting side geometric information
-        \item Implementation of a innovative image pose refinement method based on both learned image representation and geometric algorithms
+        \item Implementation of a innovative image pose refinement method based on both learned representation and geometric algorithms
     \end{itemize}
     %\vspace{5pt}
     }
@@ -146,29 +153,31 @@
 
 \newpage
 \section{Publications}
-    \textbf{Peer-reviewed Journal}
+    \textsc{\textbf{Peer-reviewed Journal}}
     
-    {\footnotesize{N. Piasco, D. Sidibé, C. Demonceaux, V. Gouet-Brunet, \href{http://recherche.ign.fr/labos/matis/pdf/articles_revues/2017/PSDG17.pdf}{\textcolor{pblue}{A Survey on Visual-Based Localization: On the Benefit of Heterogeneous Data}},
+    {\footnotesize{N. Piasco, D. Sidibé, C. Demonceaux, V. Gouet-Brunet, \href{http://recherche.ign.fr/labos/matis/pdf/articles_revues/2017/PSDG17.pdf}{\textcolor{highlight}{A Survey on Visual-Based Localization: On the Benefit of Heterogeneous Data}},
 \textit{Pattern Recognition, Volume 74, February,} 2018.}}
 	
 	\vspace{0.5cm}
-    \textbf{Peer-reviewed International Conferences} 
+    \textsc{\textbf{Peer-reviewed International Conferences}}
     
-    {\footnotesize{N. Piasco, D. Sidibé, V. Gouet-Brunet, C. Demonceaux, \href{http://recherche.ign.fr/labos/matis/pdf/articles_conf/2019/root.pdf}{\textcolor{pblue}{Learning Scene Geometry for Visual Localization in Challenging Conditions}},
-\textit{IEEE International Conference of Robotics and Automation, Montreal, Canada,} 2019. \textbf{(Finalist nominated for the Best Paper Award in Robot Vision.)}}
+    {\footnotesize{N. Piasco, D. Sidibé, V. Gouet-Brunet, C. Demonceaux, \href{http://recherche.ign.fr/labos/matis/pdf/articles_conf/2019/root.pdf}{\textcolor{highlight}{Learning Scene Geometry for Visual Localization in Challenging Conditions}},
+\textit{IEEE International Conference of Robotics and Automation, Montreal, Canada,} 2019. \textbf{Finalist nominated for the Best Paper Award in Robot Vision.}}}
 
-	\footnotesize{N. Piasco, J. Marzat, M. Sanfourche, \href{http://julien.marzat.free.fr/Publications/2016\%20ICRA/2016_ICRA_Collaborative_localization_formation_flying_distributed_stereo-vision.pdf}{\textcolor{pblue}{Collaborative localization and formation ﬂying using distributed stereo-vision}},
-\textit{IEEE International Conference on Robotics and Automation, Stockholm, Sweden,} 2016.}	
-	}    
+    {\footnotesize{N. Piasco, D. Sidibé,  C. Demonceaux, V. Gouet-Brunet, \href{}{\textcolor{highlight}{Geometric Camera Pose Refinement with Learned Depth Maps}},
+\textit{IEEE International Conference on Image Processing, Taipei, Taiwan} 2019.}}
+
+	{\footnotesize{N. Piasco, J. Marzat, M. Sanfourche, \href{http://julien.marzat.free.fr/Publications/2016\%20ICRA/2016_ICRA_Collaborative_localization_formation_flying_distributed_stereo-vision.pdf}{\textcolor{highlight}{Collaborative localization and formation ﬂying using distributed stereo-vision}},
+\textit{IEEE International Conference on Robotics and Automation, Stockholm, Sweden,} 2016.}}	
 
 	\vspace{0.5cm}
-    \textbf{Peer-reviewed National Conferences} 
+    \textsc{\textbf{Peer-reviewed National Conferences}}
     
-    {\footnotesize{N. Piasco, D. Sidibé, V. Gouet-Brunet, C. Demonceaux, \href{https://rfiap2018.ign.fr/sites/default/files/ARTICLES/RFIAP_2018/RFIAP_2018_Piasco_Apprentissage.pdf}{\textcolor{pblue}{Apprentissage de modalités auxiliaires pour la localisation basée vision}},
-\textit{Reconnaissance des Formes, Image, Apprentissage et Perception (RFIAP), Champs-sur-Marne, France,} 2018.}
+    {\footnotesize{N. Piasco, D. Sidibé, V. Gouet-Brunet, C. Demonceaux, \href{https://rfiap2018.ign.fr/sites/default/files/ARTICLES/RFIAP_2018/RFIAP_2018_Piasco_Apprentissage.pdf}{\textcolor{highlight}{Apprentissage de modalités auxiliaires pour la localisation basée vision}},
+\textit{Reconnaissance des Formes, Image, Apprentissage et Perception (RFIAP), Champs-sur-Marne, France,} 2018.}}
 
-\footnotesize{N. Piasco, D. Sidibé, V. Gouet-Brunet, C. Demonceaux, \href{http://recherche.ign.fr/labos/matis/img/ic_pdf.gif}{\textcolor{pblue}{Localisation Basée Vision : de l’hétérogénéité des approches et des données}},
-\textit{ORASIS - Journées francophones des jeunes chercheurs en vision par ordinateur, Colleville-sur-Mer, France,} 2017.}}
+\footnotesize{N. Piasco, D. Sidibé, V. Gouet-Brunet, C. Demonceaux, \href{http://recherche.ign.fr/labos/matis/img/ic_pdf.gif}{\textcolor{highlight}{Localisation Basée Vision : de l’hétérogénéité des approches et des données}},
+\textit{ORASIS - Journées francophones des jeunes chercheurs en vision par ordinateur, Colleville-sur-Mer, France,} 2017.}
     
 
 %\begin{flushleft}
