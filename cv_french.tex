@@ -1,0 +1,234 @@
+%!TEX TS-program = xelatex
+\documentclass[]{friggeri-cv-cust}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage{afterpage}
+\usepackage[colorlinks=true]{hyperref}
+\usepackage{color}
+\usepackage{xcolor}
+\hypersetup{
+    pdftitle={},
+    pdfauthor={},
+    pdfsubject={},
+    pdfkeywords={},
+    colorlinks = true,
+	linkcolor = blue,
+	urlcolor  = blue,
+    citecolor = blue,
+    anchorcolor = blue       % no lik border color
+   allbordercolors=white    % white border color for all
+}
+\addbibresource{bibliography.bib}
+%\RequirePackage{xcolor}
+\color{darkgray}
+\begin{document}
+
+\header{Nathan}{Piasco}
+      {Ingénieur - Doctorant en vision par ordinateur}
+      
+% Fake text to add separator      
+\vspace{10pt}
+\fcolorbox{white}{gray}{\parbox{\dimexpr\textwidth-2\fboxsep-2\fboxrule}{%
+.....
+}}
+\vspace{1pt}
+
+% In the aside, each new line forces a line break
+\begin{aside}
+  ~
+  \section{Contact}
+    ~
+    10 rue des Arquebusiers
+    75003, Paris
+    FRANCE
+    ~
+    +33 632508367
+    ~
+   	\href{mailto:nathan.piasco@gmail.com}{\textbf{nathan.piasco@}}
+   	gmail.com
+	{\href{https://www.linkedin.com/in/nathan-piasco-a4766aa5/}{\textcolor{highlight}{linkedin}}}
+	{\href{https://scholar.google.fr/citations?user=S3zYmOYAAAAJ&hl=fr}{\textcolor{highlight}{scholar}}}
+	~
+    Né le 12 août 1992
+    ~    
+  \section{Compétences}
+    ~
+    \textbf{\small{\textsc{Vision par ordinateur}}}
+    indexation d'images
+    géometrie multi-vues
+    reconnaissance de formes
+    ~    
+    \textbf{\small{\textsc{Apprentissage}}}
+    supervisé
+    non-supervisé
+    auto-supervisé
+    regression
+    ~    
+    \textbf{\small{\textsc{Réseau neuronaux}}}
+    réseau convolutif
+    //~~~~~~ récurrent
+    encoder/decoder
+    GAN
+    ~    
+  \section{Informatique}
+    ~  
+    \textbf{\textsc{\textsc{Langages de Programmation}}}
+    Python, \texttt{C/C++},
+    Matlab,  \LaTeX
+    ~
+    \textbf{\textsc{Bibliothèques}}
+    Pytorch
+    Scikit Learn
+	OpenCV, OpenGL
+    PCL (Point Cloud Library)
+    ROS (Robotic Operating System)
+    ~
+    \textbf{\textsc{OS}}
+    Linux, Windows, MacOS
+    ~
+    \textbf{{Github}} : {\href{https://github.com/npiasco}{\textcolor{highlight}{npiasco}}}
+\end{aside}
+
+\section{Formation}
+\begin{entrylist}
+  \entry
+    {2016 - 2019}
+    {Doctorat - Traitement d'Images}
+    {UBFC, Dijon}
+    {Sujet : Localisation basée vision à partir de caractéristiques discriminantes issues de données visuelles hétérogènes}
+  \entry
+    {2014 - 2015}
+    {Master 2}
+    {Universit\'e Pierre et Marie Curie, Paris}
+    {Sciences de l'Ingénieur spécialité Image et Son pour les Systèmes Intelligents}
+  \entry
+    {2010 - 2015}
+    {École d’ingénieurs diplômés}
+    {Polytech Paris-UPMC, Paris}
+    {Spécialité Robotique}
+\end{entrylist}
+
+\section{Expériences professionnelles}
+\begin{entrylist}
+  \entry
+    {\small{10/16 - \textit{09/19}}}
+    {Doctorant}
+    {Vibot, ImVIA - LASTIG-IGN lab, 94160 Saint-Mandé}
+    {\textsc{Localisation basée vision à partir de caractéristiques discriminantes issues de données visuelles hétérogènes :}
+    \begin{itemize}[label=$\rhd$]
+    	\item Réalisation d'un état de l'art exhaustif sur la problématique de la localisation basée vision,
+        \item Utilisation d’algorithmes d'apprentissage profond pour la tache de localisation à partir de données de natures hétérogènes et en conditions difficiles,
+        \item Mise au point d'une nouvelle méthode d'estimation de pose précise basé sur une approche géométrique combinée à une représentation apprise de la donnée.
+    \end{itemize}
+    %\vspace{5pt}
+    }
+  \entry
+    {\small{10/16 - \textit{09/19}}}
+    {Enseignant}
+    {Ecole d'ingénieur ENSG, 77420 Champs-sur-Marne}
+    {\textsc{En parallèle de mon travail de thèse, je dispense des cours à des élèves de l'école d’ingénieur ENSG :}
+    \begin{itemize}[label=$\rhd$]
+        \item Réalité augmentée : introduction aux bases de la réalité augmentée, du traitement d'images à l'augmentation 3D de l'environnement
+        \item OpenGL : introduction à la programmation graphique
+   		\item Python : base de la programmation avec python
+    \end{itemize}
+    %\vspace{5pt}
+    }
+  \entry
+    {10/15 - 09/16}
+    {Ingénieur R\&D vision}
+    {A.I.Mergence : startup spécialisé en robotique, 75013 Paris}
+    {\textsc{Responsable vision par ordinateur pour un projet de robot mobile domestique :}
+    \begin{itemize}[label=$\rhd$]
+    	\item Veille technologique sur différents domaines de la vision par ordinateur : navigation, reconnaissance de personnes, tracking, vision multicaméras, caméras de profondeur,
+    	\item Développement de modules pour la stéréo-vision, la détection et la localisation d'éléments sémantiques dans un logis,
+        \item Optimisation et intégration d'algorithmes sur une architecture embarquée ARM.
+    \end{itemize} \vspace{5pt}}
+  \entry
+    {03/15 - 09/15}
+    {Stage de fin d'études}
+    {ONERA, the French Aerospace Lab, 91120 Palaiseau}
+    {\textsc{Localisation globale coopérative d’un essaim de drones quadri-rotors à base de vision :}
+    \begin{itemize}[label=$\rhd$]
+    	\item Reconstruction de position par stéréo-vision multi-portée,
+    	\item Fusion de données inertielles/vision,
+        \item Mise en place d’une loi de commande d’un essaim de drones, 
+        \item Expérimentation en conditions réelles sur une flotte de trois véhicules.
+    \end{itemize} \vspace{5pt}}
+\end{entrylist}
+
+\newpage
+\section{Publications}
+    \textsc{\textbf{Peer-reviewed Journal}}
+    
+    {\footnotesize{N. Piasco, D. Sidibé, C. Demonceaux, V. Gouet-Brunet, \href{http://recherche.ign.fr/labos/matis/pdf/articles_revues/2017/PSDG17.pdf}{\textcolor{highlight}{A Survey on Visual-Based Localization: On the Benefit of Heterogeneous Data}},
+\textit{Pattern Recognition, Volume 74, February,} 2018.}}
+	
+	\vspace{0.5cm}
+    \textsc{\textbf{Peer-reviewed International Conferences}}
+   
+    {\footnotesize{N. Piasco, D. Sidibé, C. Demonceaux, V. Gouet-Brunet, \href{https://hal.archives-ouvertes.fr/hal-02190840}{\textcolor{highlight}{Perspective-n-Learned-Point: Pose Estimation from Relative Depth}},
+    \textit{British Machine Vision Conference, Cardiff, United Kingdom,} 2019. \textbf{Presentation ``Spotlight''.}}}
+        
+    
+    {\footnotesize{N. Piasco, D. Sidibé, V. Gouet-Brunet, C. Demonceaux, \href{http://recherche.ign.fr/labos/matis/pdf/articles_conf/2019/root.pdf}{\textcolor{highlight}{Learning Scene Geometry for Visual Localization in Challenging Conditions}},
+\textit{IEEE International Conference of Robotics and Automation, Montreal, Canada,} 2019. \textbf{Nominé pour le prix du meilleur papier en vision robotique.}}}
+
+    {\footnotesize{N. Piasco, D. Sidibé,  C. Demonceaux, V. Gouet-Brunet, \href{https://hal.archives-ouvertes.fr/hal-02123899}{\textcolor{highlight}{Geometric Camera Pose Refinement with Learned Depth Maps}},
+\textit{IEEE International Conference on Image Processing, Taipei, Taiwan} 2019.}}
+
+	{\footnotesize{N. Piasco, J. Marzat, M. Sanfourche, \href{http://julien.marzat.free.fr/Publications/2016\%20ICRA/2016_ICRA_Collaborative_localization_formation_flying_distributed_stereo-vision.pdf}{\textcolor{highlight}{Collaborative localization and formation ﬂying using distributed stereo-vision}},
+\textit{IEEE International Conference on Robotics and Automation, Stockholm, Sweden,} 2016.}}	
+
+	\vspace{0.5cm}
+    \textsc{\textbf{Peer-reviewed National Conferences}}
+    
+    {\footnotesize{N. Piasco, D. Sidibé, V. Gouet-Brunet, C. Demonceaux, \href{https://rfiap2018.ign.fr/sites/default/files/ARTICLES/RFIAP_2018/RFIAP_2018_Piasco_Apprentissage.pdf}{\textcolor{highlight}{Apprentissage de modalités auxiliaires pour la localisation basée vision}},
+\textit{Reconnaissance des Formes, Image, Apprentissage et Perception (RFIAP), Champs-sur-Marne, France,} 2018.}}
+
+\footnotesize{N. Piasco, D. Sidibé, V. Gouet-Brunet, C. Demonceaux, \href{http://recherche.ign.fr/labos/matis/img/ic_pdf.gif}{\textcolor{highlight}{Localisation Basée Vision : de l’hétérogénéité des approches et des données}},
+\textit{ORASIS - Journées francophones des jeunes chercheurs en vision par ordinateur, Colleville-sur-Mer, France,} 2017.}
+    
+
+%\begin{flushleft}
+%\emph{January 14th, 2014}
+%\end{flushleft}
+%\begin{flushright}
+%\emph{Carmine Benedetto}
+%\end{flushright}
+
+%%% This piece of code has been commented by Karol Kozioł due to biblatex errors. 
+% 
+%\printbibsection{article}{article in peer-reviewed journal}
+%\begin{refsection}
+%  \nocite{*}
+%  \printbibliography[sorting=chronological, type=inproceedings, title={international peer-reviewed conferences/proceedings}, notkeyword={france}, heading=subbibliography]
+%\end{refsection}
+%\begin{refsection}
+%  \nocite{*}
+%  \printbibliography[sorting=chronological, type=inproceedings, title={local peer-reviewed conferences/proceedings}, keyword={france}, heading=subbibliography]
+%\end{refsection}
+%\printbibsection{misc}{other publications}
+%\printbibsection{report}{research reports}
+
+\begin{asidep2}
+  \section{Langues}
+    ~
+    \textbf{\textsc{Anglais}}
+    Courant
+    ~
+    \textbf{\textsc{Espagnol}}
+    Débutant 
+    ~    
+  \section{Mobilité}
+    ~
+    Détenteur du permis B
+    ~    
+  \section{Centres d'intérêts}
+    ~
+  Réalité augmentée
+  Robotique
+  Véhicule autonome
+\end{asidep2}
+
+\end{document}
